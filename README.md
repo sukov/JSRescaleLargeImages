@@ -9,9 +9,11 @@ function resizeLargeImages() {
 		if (imgArray[i] == null) { continue; }
 		var resizedCanvas = convertImageToCanvasAndResize(imgArray[i]);
 		if (resizedCanvas != null) {
-		//	var resizedImage = convertCanvasToImage(resizedCanvas);		   // function convertCanvasToImage will throw error if canvas.toDataURL is not allowed
+			// function convertCanvasToImage will throw error if canvas.toDataURL is not allowed
+		//	var resizedImage = convertCanvasToImage(resizedCanvas);
 		//	imgArray[i].parentNode.replaceChild(resizedImage, imgArray[i]);
-			imgArray[i].parentNode.replaceChild(resizedCanvas, imgArray[i]); // image is replaced with resized canvas (recommended mode)
+			// image is replaced with resized canvas (recommended mode)
+			imgArray[i].parentNode.replaceChild(resizedCanvas, imgArray[i]); 
 		}
 	}
 }
