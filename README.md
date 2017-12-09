@@ -1,4 +1,4 @@
-# JSRescaleLargeImages
+# JSResizeLargeImages
 
 ## Source code
 
